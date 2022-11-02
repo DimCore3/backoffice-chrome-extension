@@ -1,0 +1,54 @@
+{
+  "name": "Auxiliary tools for support (1l)",
+  "manifest_version": 3,
+  "version": "1.0",
+  "permissions": [],
+  "host_permissions": [
+    "https://backoffice.company.com/*",
+    "https://backoffice.another-company.com/"
+  ],
+  "action": {
+    "default_title": "Auxiliary tools for support (1l)",
+    "default_popup": "popup.html",
+    "default_icon": 
+    {   
+    "16": "/icons/supportExtIcon.png",
+    "32": "/icons/supportExtIcon.png",
+    "48": "/icons/supportExtIcon.png",
+    "128":"/icons/supportExtIcon.png"
+    }
+  },
+  "icons":{        
+    "128": "/icons/supportExtIcon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://backoffice.company.com/transactions/*?tab=Operations",
+        "https://backoffice.company.com/transactions/*",
+        "https://backoffice.company.com/operations/*",
+        "https://backoffice.another-company.com/transactions/*?tab=Operations",
+        "https://backoffice.another-company.com/transactions/*",
+        "https://backoffice.another-company.com/operations/*",
+        "https://backoffice.another-company.com/*",
+        "https://support.another-company.pro/otrs/*"
+      ],
+      "js": [
+        "backofficeExtension.js",
+        "providerMaps.js",
+        "merchantMaps.js",
+        "jquery-3.6.0.min.js",
+        "toastr.min.js",
+        "select2.min.js",
+        "ru.js",
+        "templatesMW.js"
+      ],
+      "css": [
+        "style.css",
+        "toastr.min.css",
+        "select2.min.css"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}

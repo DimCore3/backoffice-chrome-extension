@@ -1,0 +1,114 @@
+:root{
+--template-width: 180px;
+}
+.menuHeaderClass{
+	width:var(--template-width);
+	padding:1.8px;
+    font-size: 1.04rem;
+    font-family: auto;
+   	background: #0070d2;
+    color:#FFF;
+    border: 1px solid #dddbda;
+    border-radius: 0.25rem;
+    line-height: 1.6rem;
+}
+
+.menuHeaderClass:hover{
+	background: #0060C2;
+    border-color: #777777;
+}
+.templateClass{
+	background:	#FFF;
+	width: 100%;
+	padding: 2.5px;
+	height: auto;
+	transition: opacity 0.2s, visibility 0.2s;
+	font-size: 1rem;
+    font-family: auto;
+    border: 1px solid #CCC;
+    border-radius: 0.25rem;
+    line-height: 1.6rem;
+}
+
+.templateClass:hover{
+	background:	#E0E0E0;
+}
+
+.formTempMainBlockClass{
+	position : absolute;
+	width: var(--template-width);
+}
+
+.copyOperClass {
+	width: 30px;
+	height: 30px;
+	margin-left: 4px;
+	padding: 8px;
+	background: url("https://icons.iconarchive.com/icons/custom-icon-design/mono-general-2/512/copy-icon.png") no-repeat;
+	background-position: center;
+	background-size: 23px;
+    border: 1px solid #888;
+    border-radius: 0.25rem;
+}
+.copyOperClass:hover {
+	background-size: 22px;
+    border: 2px solid #AAA;
+}
+
+.buttonPersonalAccount {
+	width:var(--template-width);
+	padding:1.8px;
+    font-size: 1rem;
+    font-family: auto;
+   	background: #0070d2;
+    color:#FFF;
+    border: 1px solid #dddbda;
+    border-radius: 0.25rem;
+    line-height: 1.6rem;
+}
+.buttonPersonalAccount:hover {
+	background: #0060C2;
+    border-color: #777777;
+}
+
+.accountMenuClass {
+	width: 28px;
+	height: 26px;
+	margin-left: 2px;
+	padding: 6px;
+	background: url("https://cdn-icons-png.flaticon.com/512/566/566004.png") no-repeat;
+	background-position: center;
+	background-size: 18px;
+    border: 1px solid #888;
+    border-radius: 0.25rem;
+}
+.accountMenuClass:hover {
+	background-size: 22px;
+    border: 2px solid #AAA;
+}
+
+.templateClassRCS {
+	background-color: #fffDEE;
+}
+
+.templateClassFIN {
+	background-color: #fBfEff;
+}
+
+.templateClassProvider {
+	background-color: #fAfff4;
+}
+
+.select_wrp {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.indDiv{
+    border-radius: 0.5rem;
+    border: 2.3px solid ;
+}
+
+.js-select2{
+	width: 50%;
+}
